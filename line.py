@@ -14,4 +14,9 @@ class Line:
         Returns:
             float or int: distance.
         """
-        pass
+        x = self.x1 + abs(self.x2)
+        y = self.y1 + abs(self.y2)
+        return f"X = {x} sm | Y = {y} sm"
+l = Line(5, 4, -5, -4)
+line = l.get_length()
+print(line)
